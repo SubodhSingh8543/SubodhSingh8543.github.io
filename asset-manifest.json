@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.58147f88.chunk.css",
+    "main.css": "/static/css/main.5f9cd5fd.chunk.css",
     "main.js": "/static/js/main.80280a19.chunk.js",
     "main.js.map": "/static/js/main.80280a19.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c9b1da0f.js",
@@ -10,7 +10,7 @@
     "static/js/2.36065f62.chunk.js.map": "/static/js/2.36065f62.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.95d02a1e.chunk.css.map": "/static/css/2.95d02a1e.chunk.css.map",
-    "static/css/main.58147f88.chunk.css.map": "/static/css/main.58147f88.chunk.css.map",
+    "static/css/main.5f9cd5fd.chunk.css.map": "/static/css/main.5f9cd5fd.chunk.css.map",
     "static/js/2.36065f62.chunk.js.LICENSE.txt": "/static/js/2.36065f62.chunk.js.LICENSE.txt",
     "static/media/Subodh_Singh_Resume.5475fcdf.pdf": "/static/media/Subodh_Singh_Resume.5475fcdf.pdf",
     "static/media/project_1_pic.e171ae27.png": "/static/media/project_1_pic.e171ae27.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.c9b1da0f.js",
     "static/css/2.95d02a1e.chunk.css",
     "static/js/2.36065f62.chunk.js",
-    "static/css/main.58147f88.chunk.css",
+    "static/css/main.5f9cd5fd.chunk.css",
     "static/js/main.80280a19.chunk.js"
   ]
 }
