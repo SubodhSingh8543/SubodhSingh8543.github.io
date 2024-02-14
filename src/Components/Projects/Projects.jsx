@@ -13,7 +13,8 @@ import {
   SiReactrouter,
   SiJavascript,
   SiMongodb,
-  SiNodedotjs
+  SiNodedotjs,
+  SiNodemon
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { VscJson } from "react-icons/vsc";
@@ -22,14 +23,118 @@ import img1 from "../../Images/project_1_pic.png";
 import img2 from "../../Images/project_3_pic.png";
 import img3 from "../../Images/project_2_pic.png";
 import img4 from "../../Images/project_4_pic.png";
+import img5 from "../../Images/project_5_pic.png";
+import img6 from "../../Images/project_6_pic.png";
+
 
 export const Projects = () => {
   return (
     <>
-      <div className="section">
-        <h2 className="section__title different" data-aos="fade-right">
+      <div className="section" style={{zIndex:-1}}>
+        <h2 className="section__title different"  data-aos="fade-right" style={{paddingTop:"100px", marginTop:"-100px",zIndex:-10,backgroundColor:"transparent"}}>
           Projects
         </h2>
+        <div className="projects_container" class="project-card" style={{zIndex:-10}}>
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src={img6}
+                  alt="Medicare"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2 class="project-title">Medicare</h2>
+              <p class="project-description">
+                {/* Clone of the popular email campaigning app Mail Chimp. Built on react for front end and nodeJS on backend. It's a team project completed executed in 5 days. */}
+                 It is an e-Commerce website built on React for front end and Mongodb & Express for backend. It is completed & executed in 4 days.
+              </p>
+              <div class="project-tech-stack" id="projectech">
+                <FaReact />
+                <SiHtml5 />
+                <IoLogoJavascript />
+                <SiNodedotjs />
+                <SiNodemon/>
+                <SiMongodb/>
+                <SiExpress/>
+                {/* <SiExpress /> */}
+                {/* <SiMongodb /> */}
+              </div>
+              <div>
+                <a
+                  href="https://frontend-mu-wine.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-deployed-link"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/SaurabhBH123/rebel-snow-4871"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-github-link"
+                >
+                  <span type="button" className="btn btn--outline">
+                    View Code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projects_container" class="project-card">
+          <div className="project">
+            <div className="project_videocontainer">
+              <div data-aos="fade-right">
+                <img
+                  src={img5}
+                  alt="Object O Pedia"
+                />
+              </div>
+            </div>
+            <div className="project_information" data-aos="fade-right">
+              <h2 class="project-title">Object O Pedia</h2>
+              <p class="project-description">
+                {/* Clone of the popular email campaigning app Mail Chimp. Built on react for front end and nodeJS on backend. It's a team project completed executed in 5 days. */}
+                 It is an e-Commerce website built on React for front end. It is completed & executed in 4 days.
+              </p>
+              <div class="project-tech-stack">
+                <FaReact />
+                <SiHtml5 />
+                <IoLogoJavascript />
+                <SiNodedotjs />
+                {/* <SiExpress /> */}
+                {/* <SiMongodb /> */}
+              </div>
+              <div>
+                <a
+                  href="https://zippy-question-7549.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-deployed-link"
+                >
+                  <span type="button" className="btn btn--outline onbt">
+                    See this Live
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/SubodhSingh8543/zippy-question-7549"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-github-link"
+                >
+                  <span type="button" className="btn btn--outline">
+                    View Code
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="projects_container" class="project-card">
           <div className="project">
             <div className="project_videocontainer">
@@ -127,7 +232,7 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="projects_container" class="project-card">
+        {/* <div className="projects_container" class="project-card">
           <div className="project">
             <div className="project_videocontainer">
               <div data-aos="fade-right">
@@ -143,9 +248,6 @@ export const Projects = () => {
                 It is a subscription management app built using React. A solo project.
               </p>
               <div class="project-tech-stack">
-                {/* <SiNodedotjs /> */}
-                {/* <SiExpress /> */}
-                {/* <SiMongodb /> */}
                 <IoLogoJavascript />
                 <FaReact />
               </div>
@@ -218,7 +320,10 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
+
         {/* <div className="projects_container" class="project-card">
           <div className="project">
             <div className="project_videocontainer">

@@ -12,7 +12,7 @@
   margin-top: 0.4em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 805px) {
   .nav__list {
     display: none;
     flex-direction: column;
@@ -34,4 +34,13 @@
     z-index: 2;
     margin-left: 0.8em;
   }
+}
+
+#about{
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+#resume-button-1{
+  margin-top: -5px;
 }

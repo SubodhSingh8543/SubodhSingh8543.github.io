@@ -7,16 +7,15 @@ export const Header = () => {
   const [{ themename }] = React.useContext(ThemeContext);
 
   return (
-    <>
+    <div style={{position:"fixed",zIndex:10,width:"100%"}} >
       <header className={"header center " + themename}>
         <h3>
           <a href="#home-home" className="link">
-            {/* imbickydutta */}
-            imsubodhkumarsingh
+            imsubodhsingh
           </a>
         </h3>
-        <Navbar />
+        <Navbar  />
       </header>
-    </>
+    </div>
   );
 };

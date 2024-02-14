@@ -11,16 +11,24 @@ import PublicIcon from "@material-ui/icons/Public";
 import { Introduction } from "./Introduction";
 import { Timeline } from "./Timeline";
 import { Techstacks } from "./Techstacks";
+import resume2 from "../../Images/Subodh_Singh_Resume.pdf";
+import { Button } from "@material-ui/core";
 export const About = () => {
+
+  const redirect = () => {
+    window.open("https://drive.google.com/file/d/1QeVxMbEWzYEtMmRXWyThWKP-bLX56aVl/view?usp=share_link", "_blank", "noreferrer");
+  }
+
+
   return (
     <>
-      <div className="about center">
+      <div id="about" class="about section" className="about center" >
         <h1 data-aos="fade-right" id="user-detail-name">
           Hi, I am <span className="about__name">Subodh Singh</span>
         </h1>
         <Type />
         <h1 className="about__desc" data-aos="fade-right" id="user-detail-intro" >
-          A Full Stack Developer(Mern) who loves solving problems and building projects. I am equipped with a variety of technologies and tools to help me build the best possible product.
+          A Full Stack Developer(MERN) who loves solving problems and building projects. I am equipped with a variety of technologies and tools like  MERN, JavaScript, MongoDB, Frontend, Backend to help me build the best possible product
         </h1>
         <div className="about__contact center">
           <a
@@ -88,6 +96,11 @@ export const About = () => {
             <PublicIcon />
           </a> */}
         </div>
+        <Button onClick={redirect} id="resume-button-2" style={{ border: "1px solid #555555", fontWeight: "bold", color: "#cdcdff",padding:"0px",zIndex:9}} > 
+          <a href={resume2} id="resume-link-2" download>
+             <p style={{ fontWeight: "bold", color: "#2978b5", paddingLeft:"20px",paddingRight:"20px",paddingTop:"5px",paddingBottom:"5px" }}>Resume</p>
+          </a>
+        </Button>
       </div>
       <Introduction />
       <Timeline />

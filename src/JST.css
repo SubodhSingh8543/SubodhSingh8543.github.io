@@ -1,0 +1,13 @@
+
+
+.cards{
+    width: 495px;
+}
+
+@media (max-width: 805px) {
+
+    .cards{
+        /* border: 20px solid green; */
+        width: 80%;
+    }
+}

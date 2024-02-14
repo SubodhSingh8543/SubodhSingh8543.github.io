@@ -20,7 +20,7 @@ export const Techstacks = () => {
   return (
     <>
       <div className="section main" data-aos="fade-right">
-        <h2 className="section__title different">Skills</h2>
+        <h2 className="section__title different" style={{paddingTop:"100px",marginTop:"-70px"}}>Skills</h2>
         <div className="techsection">
           <div class="skills-card">
             <SiJavascript class="skills-card-img" />

@@ -11,28 +11,31 @@ import { Projects } from "./Components/Projects/Projects";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
 import { ScrollToTop } from "./Components/ScrollToTop/ScrollToTop";
+import { JST } from "./JST";
 export default function App() {
   const [{ themename }] = React.useContext(ThemeContext);
   React.useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div id="top" className={`${themename} app`}>
-      <section id="#home-home">
+    <div id="top" className={`${themename} app`} >
+      <section id="#home-home" >
         <Header />
       </section>
-      <main>
+      <main >
         <About />
         <Github />
-        <section id="#projects-projects">
+        <section id="#projects-projects" >
           <Projects />
         </section>
+        <JST/>
         <section id="#contact-contact">
           <Contact />
         </section>
       </main>
       <Footer />
       <ScrollToTop />
+  
     </div>
   );
 }

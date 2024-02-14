@@ -5,6 +5,8 @@ import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import resume2 from "../../Images/Subodh_Singh_Resume.pdf";
+import { Button } from "@material-ui/core";
 
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
@@ -17,8 +19,13 @@ export const Navbar = () => {
     }
     setShowNavList(!showNavList);
   };
+
+  const redirect = () => {
+    window.open("https://drive.google.com/file/d/1QeVxMbEWzYEtMmRXWyThWKP-bLX56aVl/view?usp=share_link","_blank","noreferrer");
+  }
+
   return (
-    <>
+    <div >
       <nav className="center nav" id="nav-menu">
         <ul
           style={{ display: showNavList ? "flex" : null }}
@@ -34,7 +41,7 @@ export const Navbar = () => {
               Home
             </a>
           </li>
-          <li className="nav__list-item" id="about"  class="about section">
+          <li className="nav__list-item" id="about"  class="about section newStyleToAbout">
             <a
               href="#about-about"
               onClick={() => toggleNavList("#about-about")}
@@ -74,18 +81,25 @@ export const Navbar = () => {
               Contact
             </a>
           </li>
-          <li className="nav__list-item">
+          <li className="nav__list-item nav-link resume"  >
+            <Button onClick={() => { 
+                toggleNavList();
+                redirect();
+              }}
+              id="resume-button-1"
+              >
             <a
-              href="https://drive.google.co"
-              onClick={toggleNavList}
+              href={resume2}
               className="link link--nav"
               target="_blank"
               rel="noreferrer"
               class="nav-link resume"
               id="resume-link-1"
+              download
             >
-              Resume
+              <p style={{fontWeight:"bold",color:"#555555"}}> Resume</p>
             </a>
+            </Button>  
           </li>
         </ul>
         <button
@@ -95,7 +109,8 @@ export const Navbar = () => {
           aria-label="toggle theme"
           style={{ backgroundColor: "inherit" }}
         >
-          {themename === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+          {/* {themename === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />} */}
+          {/* {themename === "dark" ? <Brightness2Icon /> : <Brightness2Icon />} */}
         </button>
         <button
           type="button"
@@ -106,6 +121,6 @@ export const Navbar = () => {
           {showNavList ? <CloseIcon /> : <MenuIcon />}
         </button>
       </nav>
-    </>
+    </div>
   );
 };

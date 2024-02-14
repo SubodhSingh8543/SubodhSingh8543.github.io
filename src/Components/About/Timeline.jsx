@@ -27,7 +27,7 @@ export const Timeline = () => {
   return (
     <>
       <div className="section mainsection">
-        <h2 className="section__title" data-aos="fade-right">
+        <h2 className="section__title" data-aos="fade-right" style={{backgroundColor:"transparent"}} >
           My <span className="different">Timeline 💫</span>
         </h2>
         <VerticalTimeline lineColor={linecolor}>

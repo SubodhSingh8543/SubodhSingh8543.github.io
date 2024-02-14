@@ -88,6 +88,12 @@
   display: none;
 }
 
+.section__title{
+  padding-top: 100px;
+  margin-top: -100px;
+  z-index: -1;
+}
+
 @media (max-width: 600px) {
   .project {
     flex-direction: column;
@@ -98,5 +104,17 @@
   }
   .project_information {
     flex-basis: 60%;
+  }
+}
+
+@media (max-width: 350px){
+  #projectech{
+    display: grid;
+    /* border: 3px solid green; */
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
   }
 }

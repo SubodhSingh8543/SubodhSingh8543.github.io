@@ -27,7 +27,53 @@
 .phone:hover {
   color: rgb(49, 236, 49);
 }
+
+/* #contact-phone{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+#contact-email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+} */
+
+.contactcontainer > a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid yellow; */
+}
+
 @media (max-width: 600px) {
+  .contactcontainer{
+    flex-direction: column;
+    justify-content: center;
+    /* border: 5px solid red; */
+  }
+
+  .contactcontainer > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .contactcontainer > a:nth-child(3), .contactcontainer > a:nth-child(4){
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+
   .contactcontainer svg {
     font-size: 2em;
   }
@@ -35,3 +81,4 @@
     font-size: 3rem;
   }
 }
+

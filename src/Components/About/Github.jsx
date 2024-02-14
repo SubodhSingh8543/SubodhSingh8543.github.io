@@ -16,7 +16,7 @@ export const Github = () => {
 
   return (
     <>
-      <div className={"section " + themename} data-aos="fade-right">
+      <div className={"section " + themename} data-aos="fade-right" style={{zIndex:100,backgroundColor:"transparent"}}>
         <h2 className="section__title different">
           Days I <span className="different"> Code</span>
         </h2>
@@ -24,7 +24,7 @@ export const Github = () => {
           username="SubodhSingh8543"
           blockSize={15}
           blockMargin={5}
-          theme={themename}
+          // theme={themename}
           fontSize={16}
         />
       </div>

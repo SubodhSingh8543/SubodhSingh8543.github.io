@@ -17,28 +17,12 @@ export const Contact = () => {
         </h2>
         <div className={"contactcontainer " + themename} data-aos="fade-right">
           <a
-            href="https://www.linkedin.com/in/subodh-kumar-singh-1b73a2237/"
-            target="_blank"
-            rel="noreferrer"
-            id="contact-linkedin" 
-          >
-            <FaLinkedin className="linkedin"  />
-          </a>
-          <a
-            href="https://github.com/SubodhSingh8543"
-            target="_blank"
-            rel="noreferrer"
-            id="contact-github"
-          >
-            <VscGithub className="github"  />
-          </a>
-          <a
             href="mailto:subodhsingh8543@gmail.com"
             target="_blank"
             rel="noreferrer"
             id="contact-email"
           >
-            <CgMail className="email"  />
+            <CgMail className="email" /><p style={{ color: "#2977b5" }}>subodhsingh8543@gmail.com</p>
           </a>
           {/* <a
             href=""
@@ -48,7 +32,23 @@ export const Contact = () => {
             <BsInstagram className="twitter" />
           </a> */}
           <a href="tel:+918279803556" target="_blank" rel="noreferrer" id="contact-phone">
-            <BsFillTelephoneFill className="phone"  />
+            <BsFillTelephoneFill className="phone" /> <p style={{ color: "#2977b5" }}>8279803556</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/subodh-kumar-singh-1b73a2237/"
+            target="_blank"
+            rel="noreferrer"
+            id="contact-linkedin"
+          >
+            <FaLinkedin className="linkedin" />
+          </a>
+          <a
+            href="https://github.com/SubodhSingh8543"
+            target="_blank"
+            rel="noreferrer"
+            id="contact-github"
+          >
+            <VscGithub className="github" />
           </a>
         </div>
       </div>
